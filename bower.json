@@ -1,0 +1,25 @@
+{
+  "name": "epk by me",
+  "authors": [
+    "AlexVyi <alexandru@epk.ro>"
+  ],
+  "description": "Our site",
+  "main": "starsite.html",
+  "keywords": [
+    "qw"
+  ],
+  "license": "MIT",
+  "homepage": "epk.ro",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Plugins",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "stickUp2": "^2.3.1"
+  }
+}
