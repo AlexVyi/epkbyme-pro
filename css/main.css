@@ -1,4 +1,4 @@
-body, html {
+body, html{
     height:100%;
 }
 .bg-overlay {
@@ -9,12 +9,9 @@ body, html {
     color: #fff;
     height: inherit;
     width:100%;
+    background-color: #1d485e;height: 100%;z-index: -1
 }
 
-
-@media screen and (max-width: 768px){
-
-}
 h1 {
 
     font-family: Roboto,sans-serif;
@@ -29,6 +26,23 @@ p{
 #masterButton{
     background-color: transparent;
     text-decoration: none;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 7s infinite;
+}
+@-webkit-keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
 }
 .navbar-inverse .navbar-nav>li>a{
     color:yellowgreen;
@@ -39,4 +53,7 @@ p{
 #jumbotronContainer{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.img-responsive{
+    float:left;
 }

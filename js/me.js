@@ -17,18 +17,20 @@ $('.nav a').on('click', function(){
 
 
 /*rotate the picture
-var circle = document.getElementById("circle");
+
+ circle = document.getElementsByClassName(".img-responsive");
 var angle = 0;
 
-setInterval(function(){
-    angle = (angle+5)%360;
-    circle.style.transform = "rotate(" + angle + "deg)"
-},6000/6)*/
+    setInterval(function () {
+        angle = (angle + 5) % 360;
+        circle[i].style.transform = "rotate(" + angle + "deg)"
+    }, 6000 / 6)*/
+
 
 
 
 //display time
-//var time = document.getElementById("time");
+
     setInterval(function displayTime() {
         var greeting;
         var dateNow = new Date();
@@ -52,5 +54,35 @@ setInterval(function(){
         else {
             greeting = "o seara buna!"
         }
-        document.getElementById("time").innerHTML = "Calculatorul dvs. ne informeaza ca este ora " + hourNow + ":" + minutesNow + ":" + secondsNow + " ,deci va dorim " + greeting
+        document.getElementById("time").innerHTML = "Este ora " + hourNow + ":" + minutesNow + ":" + secondsNow + " ,deci va dorim " + greeting
     },10)
+
+//start the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('img-responsive');
+
+var modalImg = document.getElementsByClassName('modal-content');
+
+var captionText = document.getElementById("caption");
+
+  for (var j=0;j<img.length;j++){
+
+       img[j].onclick = function() {
+           modal.style.display = "block";
+           for (var i = 0; i < modalImg.length; i++) {
+               modalImg[i].src = this.src;
+               captionText.innerHTML = this.alt;
+           }
+       }
+
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}

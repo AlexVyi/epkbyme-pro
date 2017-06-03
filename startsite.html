@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
     <meta charset="utf-8">
     <title>Sacose personalizate</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="sacose personalizate">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="Plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 
 <body data-spy="scroll" data-target="#smart-navbar" onload="">
 
 <!--<img src="css/img/chat.gif" class="img-responsive" id="chatImg"> chat img-->
-<div class="container bg-overlay"  style="background-color: #1d485e;height: 100%">
-       <div class="row text-center">
-           <div class="col-sm-6 col-sm-offset-3">
-               <img src="css/img/GoGreenShoppingBag-300px.png">
-                <div class="well" id="time" style="background-color: transparent;font-family: Montserrat,sans-serif;color:#00b3ee;border-color: #00b3ee;font-size:large"></div>
-                <button id="masterButton" type="button" class="btn btn-primary btn-lg" style="color:#00b3ee;border-color: #00b3ee"><a href="#despresacose" style="color:#00b3ee">Intra in site</a></button>
+<div class="container bg-overlay">
+       <div class="row" style="z-index: 1;">
+
+               <img id="myImg" src="css/img/sacoseplastic/maneraplicatkeepcalm.jpg" alt="Sacosa cu maner aplicat" class="img-responsive img-circle" style="width: 100%;max-width: 150px;">
+
+               <img src="css/img/farmaciigeneralehartie/cmd&oharmacy.jpg" alt="Sacosa hartie cu maner decupat & sacosa hartie cu fund in V" class="img-responsive img-circle" style="width: 100%;max-width: 150px;">
+
+
+               <img src="css/img/farmaciiveterinareplastic/plasticurs.jpg" alt="Sacosa polietilena destinata farmaciilor veterinare " class="img-responsive img-circle" style="width: 100%;max-width: 150px;">
+
+
+               <img src="css/img/farmaciigeneraleplastic/generalabananagri22x35.jpg" alt="Sacosa polietilena destinata farmaciilor umane" class="img-responsive img-circle" style="width: 100%;max-width: 150px;">
+
+
+               <img src="css/img/sacosehartiemanerrasucit/buline%20albastru.jpg" alt="Sacosa hartie cu maner rasucit" class="img-responsive img-circle" style="width: 100%;max-width: 150px;">
+           <div id="myModal" class="modal">
+               <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+               <img class="modal-content">
+               <div id="caption"></div>
            </div>
        </div>
-
+        <div class="row text-center">
+                <div class="well" id="time" style="background-color: transparent;font-family: Montserrat,sans-serif;color:#00b3ee;border-color: #00b3ee;font-size:large"></div>
+                <button id="masterButton" type="button" class="btn btn-primary btn-lg" style="color:#00b3ee;border-color: #00b3ee"><a href="#despresacose" style="color:#00b3ee">Intra in site</a></button>
+        </div>
 
 </div>
 
