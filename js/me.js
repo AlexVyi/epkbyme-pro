@@ -2,6 +2,7 @@
  * Created by alexandrupetru on 31/05/2017.
  */
 //stick the nav
+
 jQuery(function ($) {
     $(document).ready(function () {
 
@@ -10,22 +11,26 @@ jQuery(function ($) {
     });
 });
 
+
+//toggle nav when opened.close it and move to desired section
+
 $('.nav a').on('click', function(){
     $('.navbar-toggle').click()
-});//toggle nav when opened.close it and move to desired section
+});
 
 
 
-/*rotate the picture
+//rotate the picture
 
- circle = document.getElementsByClassName(".img-responsive");
-var angle = 0;
-
+ var circle = document.getElementsByClassName("img-responsive")
+ var angle = 0;
     setInterval(function () {
-        angle = (angle + 5) % 360;
-        circle[i].style.transform = "rotate(" + angle + "deg)"
-    }, 6000 / 6)*/
+        for(var z = 0;z < circle.length;z++) {
+            angle = (angle + 5) % 360;
+            circle[z].style.transform = "rotate(" + angle + "deg)"
 
+        }
+    }, 6000 / 6)
 
 
 
@@ -54,7 +59,7 @@ var angle = 0;
         else {
             greeting = "o seara buna!"
         }
-        document.getElementById("time").innerHTML = "Este ora " + hourNow + ":" + minutesNow + ":" + secondsNow + " ,deci va dorim " + greeting
+        document.getElementById("time").innerHTML = "Este ora " + hourNow + ":" + minutesNow + ":" + secondsNow + " ,deci va dorim " + greeting + " Echipa Europack Wrapping Solutions"
     },10)
 
 //start the modal

@@ -1,16 +1,16 @@
-body, html{
+body, html,.bg-overlay{
     height:100%;
 }
-.bg-overlay {
+/*.bg-overlay {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    color: #fff;
+    color: #1d485e;
     height: inherit;
     width:100%;
     background-color: #1d485e;height: 100%;z-index: -1
-}
+}*/
 
 h1 {
 
@@ -23,8 +23,7 @@ p{
     color:#34495E;
 }
 
-#masterButton{
-    background-color: transparent;
+#myImg{
     text-decoration: none;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
