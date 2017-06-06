@@ -11,7 +11,16 @@ body, html,.bg-overlay{
     width:100%;
     background-color: #1d485e;height: 100%;z-index: -1
 }*/
-
+.img-circle{
+    width: 100%;
+    max-width: 200px;
+    float:left;
+}
+@media screen and (max-height:500px) {
+  .img-circle {
+      width: 75px;!important
+  }
+}
 h1 {
 
     font-family: Roboto,sans-serif;
@@ -52,7 +61,4 @@ p{
 #jumbotronContainer{
     margin-top: 50px;
     margin-bottom: 50px;
-}
-.img-responsive{
-    float:left;
 }
