@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+    color: navajowhite;
+}
+
 body, html,.bg-overlay{
     height:100%;
 }
@@ -16,10 +21,13 @@ body, html,.bg-overlay{
     max-width: 200px;
     float:left;
 }
-@media screen and (max-height:500px) {
+@media screen and (max-height:700px) {
   .img-circle {
       width: 75px;!important
   }
+  #twdContactBtn{
+        display: none;
+    }
 }
 h1 {
 
@@ -53,7 +61,7 @@ p{
     100% {top: 100px;}
 }
 .navbar-inverse .navbar-nav>li>a{
-    color:yellowgreen;
+    color:navajowhite;
 }
 .jumbotron{
     margin-bottom: 0;
