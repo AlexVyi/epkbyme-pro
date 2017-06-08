@@ -22,7 +22,7 @@ $('.nav a').on('click', function(){
 
 //rotate the picture
 
- var circle = document.getElementsByClassName("img-circle")
+ var circle = document.getElementsByClassName("landingImg")
  var angle = 0;
     setInterval(function () {
         for(var z = 0;z < circle.length;z++) {
@@ -66,7 +66,7 @@ $('.nav a').on('click', function(){
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName('img-circle');
+var img = document.getElementsByClassName('landingImg');
 
 var modalImg = document.getElementsByClassName('modal-content');
 

@@ -1,6 +1,5 @@
 body{
    background-color: #4c9cc8;
-    color: navajowhite;
 }
 
 body, html,.bg-overlay{
@@ -16,15 +15,21 @@ body, html,.bg-overlay{
     width:100%;
     background-color: #1d485e;height: 100%;z-index: -1
 }*/
-.img-circle{
+.landingImg{
     width: 100%;
     max-width: 200px;
     float:left;
 }
 @media screen and (max-height:700px) {
-  .img-circle {
-      width: 75px;!important
+    .topPara{
+        display: none;
+    }
+  .landingImg {
+      width: 110px;!important
   }
+    #sacosadinhartieBTN{
+        margin-top:5px;
+    }
   #twdContactBtn{
         display: none;
     }
@@ -68,9 +73,10 @@ p{
     100% {top: 100px;}
 }
 .navbar-inverse .navbar-nav>li>a{
-    color:navajowhite;
+    color:white;
 }
 .jumbotron{
+    background-color: white;
     margin-bottom: 0;
 }
 #jumbotronContainer{

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro-RO">
 
 <head>
     <meta charset="utf-8">
@@ -37,32 +37,28 @@
 <!--<img src="css/img/chat.gif" class="img-responsive" id="chatImg"> chat img-->
 <div class="container bg-overlay img-responsive" style="background-image:url('css/img/sigla.png');background-position: center center;background-size: contain">
        <div class="row">
-           <p class="caption" id="time" style="background-color:transparent;color:navajowhite;border-color: #00b3ee;font-family: Pacifico,cursive;font-size: large"></p>
-           <p class="caption" style="background-color:transparent;color:navajowhite;border-color: #00b3ee;font-family: Pacifico, cursive;font-size: large">Tel verde: 0800 41 02 02</p>
-         <div class="col-sm-6 col-sm-offset-3 col-xs-5 col-xs-offset-4">
-               <img  src="css/img/sacoseplastic/maneraplicatkeepcalm.jpg" alt="Sacosa cu maner aplicat" class="img-responsive img-circle">
+           <p class="caption topPara" id="time" style="background-color:transparent;color:white;border-color: #00b3ee;font-family: Pacifico,cursive;font-size: large"></p>
+           <p class="caption topPara" style="background-color:transparent;color:white;border-color: #00b3ee;font-family: Pacifico, cursive;font-size: large">Tel verde sacose: 0800 41 02 02</p>
+         <div class="col-sm-7 col-sm-offset-3 col-xs-7 col-xs-offset-4">
+               <img  src="css/img/sacoseplastic/maneraplicatkeepcalm.jpg" alt="Sacosa cu maner aplicat" class="img-responsive img-circle landingImg">
              <hr>
-               <img src="css/img/farmaciigeneralehartie/cmd&oharmacy.jpg" alt="Sacosa hartie cu maner decupat & sacosa hartie cu fund in V" class="img-responsive img-circle">
+               <img src="css/img/farmaciigeneralehartie/cmd&oharmacy.jpg" alt="Sacosa hartie cu maner decupat & sacosa hartie cu fund in V" class="img-responsive img-circle landingImg">
 
-             <hr>
-               <img src="css/img/farmaciiveterinareplastic/plasticurs.jpg" alt="Sacosa polietilena destinata farmaciilor veterinare " class="img-responsive img-circle">
+               <img src="css/img/farmaciiveterinareplastic/plasticurs.jpg" alt="Sacosa polietilena destinata farmaciilor veterinare " class="img-responsive img-circle landingImg">
 
-             <hr>
-               <img src="css/img/farmaciigeneraleplastic/generalabananagri22x35.jpg" alt="Sacosa polietilena destinata farmaciilor umane" class="img-responsive img-circle">
+               <img src="css/img/farmaciigeneraleplastic/generalabananagri22x35.jpg" alt="Sacosa polietilena destinata farmaciilor umane" class="img-responsive img-circle landingImg">
 
-             <hr>
             <div id="myModal" class="modal">
-               <span class="close" onclick="document.getElementById('myModal').style.display='none'">x</span>
+               <span class="close">x</span>
                <img class="modal-content" src="">
                <div id="caption"></div>
             </div>
          </div>
        </div>
         <div class="row text-center">
-            <div class="col-sm-4 col-sm-offset-3 col-xs-4 col-xs-offset-4">
-                <button class="btn btn-lg btn-default" style="background-color:transparent;border-color: indianred; text-decoration: none;margin-top: 10px"><a href="#despresacose" style="color:navajowhite">Intra in site</a></button>
-                <img id="myImg" src="css/img/sacosehartiemanerrasucit/buline%20albastru.jpg" alt="Sacosa hartie cu maner rasucit" class="img-responsive img-circle">
-
+            <div class="col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
+                <button class="btn btn-lg btn-default" style="background-color:transparent;border-color: white; text-decoration: none;margin-top: 10px"><a href="#despresacose" style="color:white">Intra in site</a></button>
+                <img id="myImg" src="css/img/sacosehartiemanerrasucit/buline%20albastru.jpg" alt="Sacosa hartie cu maner rasucit" class="img-responsive img-circle landingImg">
             </div>
         </div>
 </div>
@@ -73,11 +69,11 @@
             <h2>Sacose din polietilena sau din hartie?</h2>
         <p>Una dintre intrebarile secolului 21!</p>
         <button  class="btn btn-lg btn-default" style="background-color: transparent;border-color: indianred"><a href="plastic.html" style="color: indianred">Sacosa din polietilena</a></button>
-        <button class="btn btn-lg btn-default" style="background-color: transparent;border-color: indianred"><a href="hartie.html" style="color: indianred">Sacosa din hartie</a></button>
+        <button id="sacosadinhartieBTN" class="btn btn-lg btn-default" style="background-color: transparent;border-color: indianred"><a href="hartie.html" style="color: indianred">Sacosa din hartie</a></button>
       </div>
     </div> <!-- ends the jumbotron-->
 
-<nav class="navbar navbar-default navbar-inverse" id="smart-navbar" style="background-color: #34495E">
+<nav class="navbar navbar-default navbar-inverse" id="smart-navbar" style="background-color:#4c9cc8;border-color: white">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -86,7 +82,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="" class="navbar-brand" style="font-family: Montserrat,sans-serif">Tel verde : 0800 41 02 02</a>
+            <a href="#contact" class="navbar-brand" style="font-family: Montserrat,sans-serif;text-decoration: none;color:white;">Tel verde : 0800 41 02 02</a>
         </div><!-- navbar header -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <a href="#contact" class="btn btn-danger navbar-btn navbar-right" id="twdContactBtn">Vreau sa comand</a>
@@ -108,52 +104,52 @@
 
 <section><!--call to subscribe-->
 
-        <div class="container text-center">
-            <div class="well">
+    <div class="container text-center">
+        <div class="well"  style="background-color: white">
             <h3>Comanda acum pentru a primi o surpriza!</h3>
             <hr>
             <p>Introduceti numele, prenumele, email-ul, precum si comanda dumneavoastra.</p>
             <hr>
             <form action="https://formspree.io/office@epk.ro" method="POST">
-<!--recaptcha--><div class="form-group has-warning has-feedback" style="display:none">
-                     <input type="text" class="form-control" name="_gotcha" style="display:none" />
-                 </div>
-<!--recaptcha--> <div class="form-group has-warning has-feedback" style="display:none">
-                    <input type="hidden" class="form-control" name="_next" value="//vying.network/thankyou.html"/>
-                </div>
+                <!--recaptcha--><div class="form-group has-warning has-feedback" style="display:none">
+                <input type="text" class="form-control" name="_gotcha" style="display:none" />
+            </div>
+                <!--recaptcha--> <div class="form-group has-warning has-feedback" style="display:none">
+                <input type="hidden" class="form-control" name="_next" value="//vying.network/thankyou.html"/>
+            </div>
                 <div class="form-group has-warning has-feedback">
                     <div class="col-lg-6 col-md-6">
-                      <label for="order">Numele si Prenumele</label>
-                      <input type="text" name="name" class="form-control" id="order" placeholder="numele si prenumele">
+                        <label for="order">Numele si Prenumele</label>
+                        <input type="text" name="name" class="form-control" id="order" placeholder="numele si prenumele">
                     </div>
                 </div>
 
                 <div class="form-group has-warning has-feedback">
                     <div class="col-lg-6 col-md-6">
-                    <label for="firstFormEmail">Adresa de email</label>
-                    <input type="email" name="email" class="form-control" id="firstFormEmail" placeholder="adresa de email">
+                        <label for="firstFormEmail">Adresa de email</label>
+                        <input type="email" name="email" class="form-control" id="firstFormEmail" placeholder="adresa de email">
                     </div>
                 </div>
                 <div class="form-group has-warning has-feedback">
                     <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
-                      <label for="message">Comanda dvs.</label>
-                      <input type="text" name="message" class="form-control" id="message" placeholder="Comanda dvs. aici">
+                        <label for="message">Comanda dvs.</label>
+                        <input type="text" name="message" class="form-control" id="message" placeholder="Comanda dvs. aici">
                     </div>
                 </div>
                 <button type="submit" value="Send" class="btn btn-warning" style="margin-top: 10px">Trimite comanda</button>
                 <hr>
             </form>
 
-        </div><!--ends container-->
+        </div><!--ends div well-->
 
-    </div> <!--ends div well-->
+    </div> <!--ends container-->
 </section><!--end call to subscribe section-->
 
 <!--Despre sacose carousel-->
 <div class="container">
-    <section>
+    <section style="background-color: #4c9cc8;">
         <div class="page-header" id="despresacose">
-            <h2>Despre sacose, <small>prin imagini care spun ca si tu iti vei dorii sa personalizezi cu noi</small></h2>
+            <h2>Despre sacose, <small style="color: white">prin imagini care spun ca si tu iti vei dorii sa personalizezi cu noi</small></h2>
         </div>
 
         <div class="carousel slide" id="alex-carousel" data-ride="carousel"  style="width: 60%;margin-left: 20%">
@@ -180,133 +176,133 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="css/img/sacoseplastic/maneraplicatkeepcalm.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/sacoseplastic/maneraplicatkeepcalm.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena cu maner aplicat</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/sacoseplastic/bananaalbakeepcalm.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/sacoseplastic/bananaalbakeepcalm.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip banana</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/sacoseplastic/maiounegrukeepcalm.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/sacoseplastic/maiounegrukeepcalm.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip maiou</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/sacoseplastic/maiouvamultumim.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/sacoseplastic/maiouvamultumim.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip maiou</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciiveterinareplastic/plasticurs2.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciiveterinareplastic/plasticurs2.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip maiou destinata farmaciilor veterinare</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciigeneralehartie/cmd&oharmacy.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciigeneralehartie/cmd&oharmacy.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacose hartie maner decupat&fund in V destinate farmaciilor umane</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/sacosehartiemanerdecupat/carouri.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/sacosehartiemanerdecupat/carouri.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa hartie maner decupat</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/sacosehartiemanerrasucit/buline%20roz.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/sacosehartiemanerrasucit/buline%20roz.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa hartie cu maner rasucit</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciigeneraleplastic/generalabananagri22x35.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciigeneraleplastic/generalabananagri22x35.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip banana destinata farmaciilor umane</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciigeneraleplastic/generalamaiougri30x51.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciigeneraleplastic/generalamaiougri30x51.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip maiou destinata farmaciilor umane</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciiveterinareplastic/plasticmica.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciiveterinareplastic/plasticmica.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip maiou destinata farmaciilor veterinare</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciiveterinareplastic/plasticmare.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciiveterinareplastic/plasticmare.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Sacosa polietilena tip maiou destinata farmaciilor veterinare</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciigeneralehartie/pachethartiemari.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciigeneralehartie/pachethartiemari.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Pungi hartie destinate farmaciilor umane</h2>
                         <p>Suntem disponibile la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciigeneralehartie/pachethartiemici.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciigeneralehartie/pachethartiemici.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Pungi hartie destinate farmaciilor umane</h2>
                         <p>Suntem disponibile la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/farmaciiveterinarehartie/hartiegrup.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/farmaciiveterinarehartie/hartiegrup.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Pungi hartie destinate farmaciilor veterinare</h2>
                         <p>Suntem disponibile la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/pungipanificatie/panificatiealba.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/pungipanificatie/panificatiealba.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Punga hartie destinata cu precadere industriei de morarit si panificatie</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/pungipanificatie/panificatiebagheta.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/pungipanificatie/panificatiebagheta.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Punga hartie destinata cu precadere industriei de morarit si panificatie</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/pungipanificatie/panificatiecoltar.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/pungipanificatie/panificatiecoltar.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Coltar hartie destinat cu precadere industriei alimentare</h2>
                         <p>Sunt disponibil la 0800 41 02 02</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="css/img/pungipanificatie/panificatiecovrigi.jpg" alt="Ooooopss..Am pierdut imaginea..">
+                    <img class="img-circle" src="css/img/pungipanificatie/panificatiecovrigi.jpg" alt="Ooooopss..Am pierdut imaginea..">
                     <div class="carousel-caption">
                         <h2>Punga hartie destinata cu precadere industriei alimentare</h2>
                         <p>Sunt disponibila la 0800 41 02 02</p>
@@ -328,7 +324,7 @@
 <div class="container">
     <section>
         <div class="page-header" id="oferte">
-            <h2>Oferte, <small style="color: #1d485e">si, oferte... <img src="css/img/smiley.png"></small></h2>
+            <h2>Produse, <small style="color: white">si, oferte... <img class="img-circle" src="css/img/smiley.png" style="height: 40px;width: 40px;"></small></h2>
         </div> <!-- ends page header -->
 
         <div class="panel-group" id="accordionOferte">
@@ -463,7 +459,7 @@
 <div class="container">
     <section>
         <div class="page-header" id="desprenoi">
-            <h2 style="color: #1d485e">Despre noi, <small> si anume cateva chestii interesante.Asta fiind opinia noastra,fireste.<img src="css/img/smiley.png"></small></h2>
+            <h2 style="color: #1d485e">Despre noi, <small  style="color: white"> si anume cateva chestii interesante.Asta fiind opinia noastra, fireste.<img class="img-circle" src="css/img/smiley.png" style="height: 40px;width: 40px;"></small></h2>
         </div> <!-- ends page header -->
         <div class="row">
             <div class="col-lg-8">
@@ -476,7 +472,7 @@
             </div>
             <div class="col-lg-8">
                 <h2>Simona</h2>
-                <p>Vorbeste mult la telefon cu clientii si este responsabila cu buna dispozitie</p>
+                <p>Vorbeste mult la telefon cu clientii si este responsabila cu buna dispozitie.</p>
             </div>
             <div class="col-lg-4" style="margin-top: 25px">
                 <p>0729 003 191</p>
@@ -496,11 +492,11 @@
             </div>
             <div class="col-lg-4" style="margin-top: 25px">
                 <p>0726 756 073</p>
-                <a href="mailto:petre.ungur@epk.ro" target="_top">petre.ungur@epk.ro</a>
+                <a href="mailto:petru.ungur@epk.ro" target="_top">petru.ungur@epk.ro</a>
             </div>
             <div class="col-lg-8">
                 <h2>Laura</h2>
-                <p>Ultima in lista,tine in spate tot Europack-ul</p>
+                <p>Ultima in lista,tine in spate tot Europack-ul.</p>
             </div>
             <div class="col-lg-4" style="margin-top: 25px">
                 <p>0729 007 927</p>
@@ -549,7 +545,7 @@
 <div class="container">
     <section>
         <div class="page-header" id="intrebarifrecvente">
-            <h2>Intrebari frecvente, <small> si, fireste,raspunsurile aferente.Pentru raspunsurile ce nu se regasesc aici,va rugam sa ne contactati.</small></h2>
+            <h2>Intrebari frecvente, <small  style="color: white"> si, fireste,raspunsurile aferente.Pentru raspunsurile ce nu se regasesc aici,va rugam sa ne contactati.</small></h2>
         </div> <!-- ends page header -->
 
         <div class="panel-group" id="accordion">
@@ -562,10 +558,12 @@
                     </div><!--end panel title-->
                     <div id="collapse-0" class="panel-collapse collapse"><!--if("in" together with panel panel-collapse,it will remain opened)-->
                         <div class="panel-body">
-                            Discutam despre 2 taxe distincte,care in cazul sacoselor din polietilena, coexista.Ambele se declara la Ministerul Mediului lunar.Prima se achita
-                            trimestrial, iar cea de a doua in 25 Ianuarie pentru anul tocmai inchis, deci o data pe an.Atat ecotaxa cat si taxa/kg de ambalaj se trec in declaratia lunara ce se depune direct la Ministerul Mediului,
-                             dupa cum am precizat si mai sus, si doar pentru sacosele vandute in luna anterioara depunerii,
-                             nu si pentru cele ramase in stoc, in cazul acestora considerandu-se se a nu fi puse in piata.De asemenea ecotaxa trebuie afisata distinct pe bonul fiscal.
+                            Discutam despre 2 taxe distincte,care in cazul sacoselor din polietilena, coexista.Ambele se declara la Ministerul Mediului lunar.
+                            1.    Ecotaxa se declara si plateste trimestrial, pana pe data de  25 a lunii urmatoare trimestrului in care s-a desfasurat activitatea. Suma datorata la AFM reprezinta numarul de sacose introduse pe piata nationala in perioada de raportare inmultit cu valoarea ecotaxei de 0,1 lei/bucata.
+                            Ecotaxa se evidentiaza distinct pe documentele de vanzare, iar valoarea acesteia se afiseaza vizibil la punctul de vanzare, in vederea informarii consumatorilor finali.
+                            2.    2 lei/kg – contributia pentru ambalaje introduse pe piata, este o taxa care se declara cantitativ lunar, iar suma se complecteaza doar la declaratia lunii decembrie, adica pana pe data de 25 ianuarie a anului urmator.
+
+                            Mai multe informatii puteti gasi <a href="http://www.afm.ro/">aici.</a>
                         </div>
                     </div><!--ends panel collapse-1-->
                 </div>
@@ -599,8 +597,10 @@
                     </div><!--end panel title-->
                     <div id="collapse-2" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Cu autovehicule proprii sau prin intermediul unei societati de curierat.In cazul curierului,daca optati pentru plata de catre dvs a transportului,veti
-                            beneficia de tariful nostru special.
+                            Cu autovehiculele proprii, acolo unde avem rute si ajung masinile noastre, iar in restul tarii prin
+                            intermediul unei societatii de curierat. In cazul in care comanda dumneavoastra nu se ridica la suma necesara suportarii
+                            transportului de catre societatea noastra, va trebui sa achitati contravaloarea transportului direct la curier, dar veti beneficia
+                            de un  tarif special.
                         </div>
                     </div><!--ends panel collapse-2-->
                 </div>
@@ -630,9 +630,8 @@
                     </div><!--end panel title-->
                     <div id="collapse-4" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Pentru produsele din stoc,termenul de livrare este de max 48 ore,iar pentru produsele personalizate,
-                            termenul uzual este de 14 zile lucratoare.
-                        </div>
+                            Pentru produsele din stoc, termenul de livrare este de max 48 ore prin curier sau in ziua livrarii acolo unde ajung masinile
+                            noastre,iar pentru produsele personalizate, termenul uzual este de 14 zile lucratoare la produsele din polietilena si 30, la cele din hartie.</div>
                     </div><!--ends panel collapse-4-->
                 </div>
             </div>
@@ -646,7 +645,8 @@
                     </div><!--end panel title-->
                     <div id="collapse-5" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Orice produs neconform se inlocuieste pe loc,fara protest.Ne bazam  doar pe ce ne comunicati dvs.
+                            Orice produs neconform se inlocuieste pe loc,fara protest.Ne bazam  doar pe ce ne comunicati dvs.,
+                            avand doar rugamintea de a ne returna o parte din produsele neconforme pentru a putea remedia problema.
                         </div>
                     </div><!--ends panel collapse-5-->
                 </div>
@@ -663,12 +663,12 @@
 <div class="container">
     <section>
         <div class="page-header" id="contact">
-            <h2>Contact<small style="color: #1d485e">ati-ne pentru mai multe detalii</small></h2>
+            <h2>Contact<small style="color: white">ati-ne pentru mai multe detalii</small></h2>
         </div>
 
         <div class="row">
             <div class="col-lg-4">
-                <p>Trimiteti-ne un mesaj, contactati-ne pe adresa de mai jos,</p>
+                <p  style="color: white">Trimiteti-ne un mesaj, contactati-ne pe adresa de mai jos,</p>
 
                 <address>
                     <strong>Europack Wrapping Solutions</strong></br>
@@ -678,7 +678,7 @@
                     Deva, HD</br>
                     Romania</br>
                     <br>
-                 <p>sau, la unul dintre urmatoarele numere de telefon:</p>
+                 <p  style="color: white">sau, la unul dintre urmatoarele numere de telefon:</p>
                     0354/401 242<br>
                     0354/738 200<br>
                     0354/401 241<br>
@@ -734,28 +734,28 @@
 <div class="container"><!--starts the container regarding Testimoniale -->
     <section>
         <div class="page-header"  id="testimoniale">
-            <h2>Testimoniale.<small>Cititi cateva dintre parerile clientilor nostrii!</small></h2>
+            <h2>Testimoniale.<small  style="color: white">Cititi cateva dintre parerile clientilor nostrii!</small></h2>
         </div>
 
         <div class="row">
             <div class="col-md-4">
                 <blockquote>
                     <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-                    <footer>John Doe</footer>
+                    <footer  style="color: white">John Doe</footer>
                 </blockquote>
             </div>
 
             <div class="col-md-4">
                 <blockquote>
                     <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-                    <footer>John Doe</footer>
+                    <footer  style="color: white">John Doe</footer>
                 </blockquote>
             </div>
 
             <div class="col-md-4">
                 <blockquote>
                     <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-                    <footer>John Doe</footer>
+                    <footer  style="color: white">John Doe</footer>
                 </blockquote>
             </div>
         </div><!-- end row -->
