@@ -21,6 +21,11 @@ body, html,.bg-overlay{
     float:left;
 }
 @media screen and (max-height:700px) {
+    #chatImg{
+        width:100px;
+        margin-top:10px;!important
+        position:relative;!important
+    }
     .topPara{
         display: none;
     }
@@ -87,3 +92,4 @@ a[href^="tel"]{
     color:inherit;
     text-decoration:none;
 }
+

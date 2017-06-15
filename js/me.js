@@ -91,3 +91,8 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
     modal.style.display = "none";
 }
+//remove style from chat image and add other via css
+if(window.innerHeight < 700){
+    var chatImg = document.getElementById("chatImg");
+    chatImg.removeAttribute("style");
+}
